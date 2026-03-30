@@ -3,10 +3,10 @@ import React from "react";
 function page() {
   return (
     <div>
-      <h1>Socials page</h1>
+      <h1>sign up page</h1>
     </div>
   );
 }
 
 export default page;
-//http://localhost:3000/about/socials
+//http://localhost:3000/signup
