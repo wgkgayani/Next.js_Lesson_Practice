@@ -27,12 +27,15 @@ function page() {
       </div>
 
       <ul>
-        <li>
-          <Link href="/products/vegis/Broccali">Broccoli</Link>
-        </li>
-        <li>
-          <Link href="/products/vegis/Spinach">Spinach</Link>
-        </li>
+        {vegis.map((vegi) => {
+          return (
+            <li>
+              <Link href={`/products/vegis/${vegi.veginame}`}>
+                {vegi.veginame}
+              </Link>
+            </li>
+          );
+        })}
       </ul>
     </>
   );
