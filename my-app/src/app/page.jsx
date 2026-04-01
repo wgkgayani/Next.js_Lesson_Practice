@@ -22,7 +22,14 @@ export default function Home() {
         <li>
           <Link href="/about/branches">Branches</Link>
         </li>
+        <li>
+          <Link href="/products/vegis">Vegies Page</Link>
+        </li>
       </ul>
+
+      <Link href="https://nextjs.org/" target="_blank">
+        Next.js Site
+      </Link>
     </>
   );
 }
