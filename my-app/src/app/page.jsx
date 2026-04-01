@@ -5,31 +5,52 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-      <h1>Hello World</h1>
-      <ul>
-        <li>
-          <Link href="/">Home</Link>
-        </li>
-        <li>
-          <Link href="/service">Service</Link>
-        </li>
-        <li>
-          <Link href="/products">Products</Link>
-        </li>
-        <li>
-          <Link href="/contact">Contact Us</Link>
-        </li>
-        <li>
-          <Link href="/about/branches">Branches</Link>
-        </li>
-        <li>
-          <Link href="/products/vegis">Vegies Page</Link>
-        </li>
-      </ul>
+      <div className="navigation">
+        <div>
+          <h1>Home Page</h1>
+        </div>
 
-      <Link href="https://nextjs.org/" target="_blank">
-        Next.js Site
-      </Link>
+        <ul className="body">
+          <li>
+            <Link href="/" className={styles.link}>
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link href="/service" className={styles.link}>
+              Service
+            </Link>
+          </li>
+          <li>
+            <Link href="/products" className={styles.link}>
+              Products
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact" className={styles.link}>
+              Contact Us
+            </Link>
+          </li>
+          <li>
+            <Link href="/about/branches" className={styles.link}>
+              Branches
+            </Link>
+          </li>
+          <li>
+            <Link href="/products/vegis" className={styles.link}>
+              Vegies Page
+            </Link>
+          </li>
+        </ul>
+
+        <Link
+          href="https://nextjs.org/"
+          target="_blank"
+          id={styles.specialLink}
+        >
+          Next.js Site
+        </Link>
+      </div>
     </>
   );
 }
