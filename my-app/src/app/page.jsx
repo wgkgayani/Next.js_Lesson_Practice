@@ -17,6 +17,11 @@ export default function Home() {
             </Link>
           </li>
           <li>
+            <Link href="/about" className={styles.link}>
+              About
+            </Link>
+          </li>
+          <li>
             <Link href="/service" className={styles.link}>
               Service
             </Link>
